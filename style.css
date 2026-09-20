@@ -165,3 +165,7 @@ header.top nav a.current { text-decoration: underline; text-underline-offset: 5p
 .gcard .num { position: absolute; left: 16px; top: 16px; width: 32px; height: 32px; border-radius: 50%; background: var(--green); color: #fff; font-weight: 700; display: grid; place-items: center; }
 .gcard strong { display: block; font-size: 1.05rem; }
 .gcard .d { color: var(--muted); font-size: 0.95rem; }
+.shot{margin:16px 0;text-align:center}
+.shot img{max-width:280px;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot figcaption{color:var(--muted);font-size:.9rem;margin-top:6px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
