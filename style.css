@@ -151,3 +151,17 @@ footer { text-align: center; color: var(--muted); font-size: 0.9rem; padding: 32
   padding: 8px 16px;
   font-size: 0.95rem;
 }
+
+/* ---- multi-page additions ---- */
+header.top .wrap { flex-wrap: wrap; gap: 6px 16px; }
+header.top nav { display: flex; flex-wrap: wrap; gap: 2px 0; }
+header.top nav a.current { text-decoration: underline; text-underline-offset: 5px; }
+.pager { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin: 40px 0 0; }
+.btn.secondary { background: transparent; color: var(--green-dark) !important; border: 2px solid var(--green); padding: 11px 20px; }
+.btn.secondary:hover { background: var(--green-soft); }
+.guide { display: grid; gap: 12px; margin: 18px 0; }
+.gcard { display: block; position: relative; text-decoration: none; color: inherit; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px 16px 62px; }
+.gcard:hover { border-color: var(--green); }
+.gcard .num { position: absolute; left: 16px; top: 16px; width: 32px; height: 32px; border-radius: 50%; background: var(--green); color: #fff; font-weight: 700; display: grid; place-items: center; }
+.gcard strong { display: block; font-size: 1.05rem; }
+.gcard .d { color: var(--muted); font-size: 0.95rem; }
