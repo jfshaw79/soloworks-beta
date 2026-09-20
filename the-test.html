@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The test – SoloWorks Beta</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a href="index.html">SoloWorks Beta</a>
+    <nav><a href="business-setup.html">Business setup</a><a href="stripe-setup.html">Stripe setup</a><a href="the-test.html" class="current">The test</a><a href="payments.html">Payments</a><a href="feedback.html">Feedback</a></nav>
+  </div>
+</header>
+<div class="banner">TEST MODE &ndash; <strong>no real money moves</strong> anywhere in this guide.</div>
+
+<main class="wrap">
+  <p><small><a href="index.html">&larr; Back to the start</a></small></p>
+  <h1>The test</h1>
+  <p class="lead">Here's the main event. You'll take one job from booking, through a text message, to being paid &ndash; playing both <strong>yourself</strong> (the groomer) and the <strong>customer</strong>. About 15 minutes.</p>
+
+  <div class="callout warn">
+    <strong class="big">Before you start, you should have:</strong>
+    <ul style="margin:6px 0 0">
+      <li>done the <a href="business-setup.html">Business setup</a> (services, plus a customer with a real mobile number), and</li>
+      <li>connected Stripe in the <a href="stripe-setup.html">Stripe setup</a>.</li>
+    </ul>
+  </div>
+
+  <div class="callout safe">
+    <strong class="big">NO REAL MONEY MOVES AT ANY POINT IN THIS TEST.</strong>
+    Even when you pay in step 5, it's Stripe's practice mode. No card is charged and no bank account is touched.
+    <br><br>
+    The one thing that <em>is</em> real is the <strong>text messages</strong> &ndash; they'll genuinely arrive on the phone number you gave the app. Only the payment side is pretend.
+  </div>
+
+  <ol class="steps">
+    <li>
+      <h3>Make a new booking</h3>
+      <p>Create a new booking for one of your test customers &ndash; <strong>use the one with your (or your husband's) real mobile number</strong>. Pick one of the services you added earlier.</p>
+    </li>
+    <li>
+      <h3>Send the booking confirmation text</h3>
+      <p>Send the booking-confirmation text to the customer from the app. Then check your phone: <strong>did it arrive?</strong> Have a read of it as if you were the customer &ndash; does it make sense? Does it look right?</p>
+      <p><small>Depending on how it's set up, your phone may open a message ready to go &ndash; if so, just tap Send.</small></p>
+    </li>
+    <li>
+      <h3>Mark the job Complete</h3>
+      <p>Open the job and mark it <strong>Complete</strong>. This sends the customer a &ldquo;your pet is ready&rdquo; message with a <strong>payment link</strong> in it. Check your phone again &ndash; did that one arrive too?</p>
+    </li>
+    <li>
+      <h3>See it waiting for payment</h3>
+      <p>In the app, open the <strong>Payments</strong> tab and go to <strong>Outstanding</strong>. You should see the job you just completed sitting there, waiting to be paid.</p>
+    </li>
+    <li>
+      <h3>Be the customer: pay the link</h3>
+      <p>Now put your customer hat on. On your phone, <strong>tap the payment link in the text</strong> you just received. It opens a payment page.</p>
+      <div class="callout safe">
+        <strong class="big">Reminder: this is a practice payment. No real money moves.</strong>
+      </div>
+      <p>Pay with this special UK test debit card:</p>
+      <table class="values">
+        <tr><td>Card number</td><td><span class="magic">4000 0082 6000 0000</span></td></tr>
+        <tr><td>Expiry</td><td>Any date in the future (e.g. <span class="magic">12/34</span>)</td></tr>
+        <tr><td>CVC</td><td>Any 3 digits (e.g. <span class="magic">123</span>)</td></tr>
+      </table>
+      <div class="callout warn">
+        <strong class="big">Please use this exact card &ndash; not the &ldquo;4242 4242 4242 4242&rdquo; one.</strong>
+        You may see that 4242 number online as the standard Stripe test card. Please avoid it: Stripe's practice mode treats it as an <em>international</em> card and shows an inflated fee. The UK card above shows the real, accurate fee for a normal UK debit card &ndash; which is what we want you to see.
+      </div>
+      <h3>What about Apple Pay?</h3>
+      <p>If you'd like to try it, Apple Pay works here too &ndash; if you already have a real card in your Wallet, go ahead and pick it. In test mode, Stripe quietly swaps in a practice transaction behind the scenes, so <strong>your real card is never charged</strong>. It's completely safe.</p>
+    </li>
+  </ol>
+
+  <div class="callout safe">
+    <strong class="big">Payment made &ndash; well done!</strong>
+    Now let's see what that looks like from your side of the app.
+  </div>
+  <div class="pager">
+    <a class="btn secondary" href="stripe-setup.html">&larr; Stripe setup</a>
+    <a class="btn" href="payments.html">Payments, invoices and income &rarr;</a>
+  </div>
+</main>
+<footer>SoloWorks private beta &middot; test mode only &middot; no real money moves</footer>
+</body>
+</html>
