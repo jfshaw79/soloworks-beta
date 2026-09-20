@@ -28,7 +28,7 @@
 
   <div class="callout warn">
     <strong class="big">Do NOT use your real details on this page.</strong>
-    Stripe's practice mode only accepts special &ldquo;magic&rdquo; values for the identity and bank questions. Your real date of birth, address or bank account <strong>won't work</strong> &ndash; and you don't need them. Just copy the values in the box below exactly as written.
+    Stripe's practice mode only accepts special &ldquo;magic&rdquo; values for the identity and bank questions. Your real date of birth or bank account <strong>won't work</strong> &ndash; and you don't need them. Just copy the values in the box below exactly as written. (The only real details are your post code, and your own name and so on where Stripe asks.)
   </div>
 
   <ol class="steps">
@@ -39,12 +39,19 @@
     <li>
       <h3>Fill in the basics</h3>
       <p>Follow the on-screen questions. For anything about your business or personal life that isn't in the box below (your name, business type and so on), you can put in anything sensible &ndash; it's a practice account, so nothing is checked against real records.</p>
+      <div class="callout warn">
+        <strong class="big">If Stripe asks for a website:</strong>
+        You'll see an option to click <strong>&ldquo;I don't have a website&rdquo;</strong> (the wording may be slightly different). <strong>Please click it</strong> rather than typing a website in.
+      </div>
     </li>
     <li>
       <h3>Use these exact values when Stripe asks</h3>
       <table class="values">
         <tr><td>Date of birth</td><td><span class="magic">01/01/1901</span></td></tr>
-        <tr><td>Home address, line 1</td><td><span class="magic">address_full_match</span><br><small>Type exactly this text. It's <em>not</em> a real address &ndash; that's the point.</small></td></tr>
+        <tr><td>Home address, line 1</td><td><span class="magic">address_full_match</span><br><small>Type exactly this text. It's <em>not</em> a real address &ndash; that's the point.<br><strong>It must be all lowercase, including the first letter.</strong> Your phone or browser may automatically turn the first letter into a capital, so check it before you carry on and change it back if it has.</small></td></tr>
+        <tr><td>Post town</td><td><span class="magic">Northampton</span></td></tr>
+        <tr><td>Post code</td><td>Use your own post code</td></tr>
+        <tr><td>Bank account details</td><td><strong>Press the &ldquo;Use test account&rdquo; button</strong> when Stripe asks for your account details. It fills everything in for you.<br><small>If you don't see that button, use the two values below instead.</small></td></tr>
         <tr><td>Bank account &ndash; sort code</td><td><span class="magic">10-88-00</span></td></tr>
         <tr><td>Bank account &ndash; account number</td><td><span class="magic">00012345</span></td></tr>
       </table>
